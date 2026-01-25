@@ -19,12 +19,12 @@ jobs:
     strategy:
       matrix:
         os: ["ubuntu-latest", "windows-latest"]
-        python-version: ["3.8", "3.9", "3.10", "3.11", "3.12"]
+        python-version: ["3.10", "3.11", "3.12"]
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
     - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v5
+      uses: actions/setup-python@v6
       with:
         python-version: ${{ matrix.python-version }}
     - name: Install dependencies
@@ -49,21 +49,21 @@ jobs:
       run: bash <(curl -s https://codecov.io/bash)
       if: ${{ ! startsWith(matrix.os, 'windows') }}
     - name: Store coverage text results
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v6
       with:
-        name: coverage-text
+        name: coverage-text-${{ matrix.os }}-py${{ matrix.python-version }}
         path: coverage.txt
     - name: Store coverage HTML results
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v6
       with:
-        name: coverage-html
+        name: coverage-html-${{ matrix.os }}-py${{ matrix.python-version }}
         path: htmlcov/*
 
   static_type_check:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-    - uses: actions/setup-python@v5
+    - uses: actions/checkout@v6
+    - uses: actions/setup-python@v6
       with:
         python-version: "3.12"
     - run: python -m pip install mypy types-setuptools
