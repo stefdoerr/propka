@@ -4,7 +4,7 @@ description = "Heuristic pKa calculations with ligands"
 authors = [{ name = "Jan H. Jensen", email = "jhjensen@chem.ku.dk" }]
 maintainers = [{ name = "Nathan Baker", email = "nathanandrewbaker@gmail.com" }]
 license = { text = "LGPL v2.1" }
-readme = "README.md"
+readme = "LONG_DESCRIPTION.md"
 requires-python = ">=3.10"
 keywords = ["science", "chemistry", "bioinformatics", "pKa", "proteins"]
 classifiers = [
