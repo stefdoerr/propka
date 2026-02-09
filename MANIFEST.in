@@ -1,5 +1,5 @@
-include README.md INSTALL 
-include setup.py setup.cfg
+include README.md LONG_DESCRIPTION.md INSTALL
+include setup.py
 include propka.cfg
 
 include versioneer.py

@@ -59,7 +59,7 @@ zip-safe = true
 exclude = ["scripts*", "tests*"]
 
 [tool.setuptools.package-data]
-propka = ["*.dat", "*.cfg", "*.json"]
+propka = ["*.dat", "*.cfg", "*.json", "py.typed"]
 
 [tool.versioneer]
 VCS = "git"

@@ -3,7 +3,7 @@
 PROPKA predicts the pKa values of ionizable groups in proteins (version 3.0) and
 protein-ligand complexes (version 3.1 and later) based on the 3D structure.
 
-For proteins without ligands both version should produce the same result.
+For proteins without ligands both versions should produce the same result.
 
 The method is described in the following papers, which you should cite
 in publications:
