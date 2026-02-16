@@ -23,7 +23,7 @@ classifiers = [
     "Topic :: Scientific/Engineering :: Chemistry",
 ]
 dynamic = ["version"]
-dependencies = ["numpy"]
+dependencies = []
 
 [project.urls]
 Homepage = "http://propka.org"
@@ -34,7 +34,7 @@ Documentation = "https://propka.readthedocs.io"
 propka3 = "propka.run:main"
 
 [project.optional-dependencies]
-test = ["pytest", "numpy"]
+test = ["pytest"]
 docs = ["sphinx>=3.1", "sphinx_rtd_theme", "sphinx_sitemap"]
 dev = [
     "pytest",

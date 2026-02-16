@@ -24,4 +24,4 @@ from importlib.metadata import version, PackageNotFoundError
 try:
     __version__ = version("propka")
 except PackageNotFoundError:
-    pass
+    __version__ = "0+unknown"

@@ -1,4 +1,4 @@
-include README.md LONG_DESCRIPTION.md INSTALL
+include README.md LONG_DESCRIPTION.md
 include propka.cfg
 
 # Python type annotation declarations, see PEP-561
