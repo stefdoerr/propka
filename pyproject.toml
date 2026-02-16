@@ -48,12 +48,11 @@ dev = [
 ]
 
 [build-system]
-requires = ["setuptools>=61.0", "versioneer[toml]==0.29"]
+requires = ["setuptools>=61.0", "setuptools-scm"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
 zip-safe = true
-
 
 [tool.setuptools.packages.find]
 exclude = ["scripts*", "tests*"]
@@ -61,19 +60,11 @@ exclude = ["scripts*", "tests*"]
 [tool.setuptools.package-data]
 propka = ["*.dat", "*.cfg", "*.json", "py.typed"]
 
-[tool.versioneer]
-VCS = "git"
-style = "pep440"
-versionfile_source = "propka/_version.py"
-versionfile_build = "propka/_version.py"
-tag_prefix = "v"
-parentdir_prefix = "propka-"
+[tool.setuptools_scm]
 
 [tool.coverage.run]
 source = ["propka"]
 omit = [
-    # exclude versioneer generated file
-    "propka/_version.py",
     # do not cover tests (already covered with source = propka)
     "tests/*",
 ]
