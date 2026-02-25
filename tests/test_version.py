@@ -6,5 +6,5 @@ def test_version_exists():
 
 def test_version():
     assert (re.match(r'[0-9]+\.[0-9]+', propka.__version__) or
-            propka.__version__.startswith('0+untagged'))
+            propka.__version__.startswith('0+unknown'))
 
