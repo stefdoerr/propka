@@ -79,6 +79,5 @@ allow_split_before_dict_value = false
 
 [tool.mypy]
 files = ["propka", "tests"]
-exclude = ["_version\\.py$"]
 explicit_package_bases = true
 ignore_missing_imports = true
