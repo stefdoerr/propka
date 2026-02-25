@@ -3,7 +3,7 @@ name = "propka"
 description = "Heuristic pKa calculations with ligands"
 authors = [{ name = "Jan H. Jensen", email = "jhjensen@chem.ku.dk" }]
 maintainers = [{ name = "Nathan Baker", email = "nathanandrewbaker@gmail.com" }]
-license = { text = "LGPL v2.1" }
+license = "LGPL-2.1-only"
 readme = "LONG_DESCRIPTION.md"
 requires-python = ">=3.10"
 keywords = ["science", "chemistry", "bioinformatics", "pKa", "proteins"]
@@ -11,7 +11,6 @@ classifiers = [
     "Development Status :: 6 - Mature",
     "Environment :: Console",
     "Intended Audience :: Science/Research",
-    "License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)",
     "Operating System :: POSIX",
     "Operating System :: MacOS :: MacOS X",
     "Operating System :: Microsoft :: Windows",
